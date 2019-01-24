@@ -2,12 +2,13 @@ $(function() {
 
     // Initialize Firebase configuration
     var config = {
-        apiKey: "AIzaSyAsFK9oDTtsCdqrHAfQKs8_TmNtBOoIkBY",
-        authDomain: "emma-ea74d.firebaseapp.com",
-        databaseURL: "https://emma-ea74d.firebaseio.com",
-        storageBucket: "emma-ea74d.appspot.com",
-        messagingSenderId: "95300595436"
-    };
+        apiKey: "AIzaSyD2NEi3FGlDSVxuqCMU-JiIjP2aoOtoaK8",
+        authDomain: "fireeditor-a729f.firebaseapp.com",
+        databaseURL: "https://fireeditor-a729f.firebaseio.com",
+        projectId: "fireeditor-a729f",
+        storageBucket: "fireeditor-a729f.appspot.com",
+        messagingSenderId: "1034964203268"
+      };
     firebase.initializeApp(config);
     
     // Get the editor id, using Url.js
@@ -84,7 +85,6 @@ $(function() {
         // Hide the spinner
         $("#loader").fadeOut();
         $("#editor").fadeIn();
-
         // Initialize the ACE editor
         editor = ace.edit("editor");
         editor.setTheme(getTheme());
